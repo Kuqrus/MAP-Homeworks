@@ -1,14 +1,22 @@
 #include "Calculations.h"
 
+std::mutex m;
+std::once_flag flag;
+std::exception_ptr GlobalException = nullptr;
+HANDLE h;
+
 void Corrupted::Add(std::thread::id id) {
 	v.push_back(id);
 }
+
 void Corrupted::Print() {
 	for (const auto& id : v) {
 		std::cout << "Id: " << id << " ";
 	}
 	std::cout << std::endl;
 }
+
+Corrupted c;
 
 int RandNumLarge() {
 	std::srand(std::time(0));
