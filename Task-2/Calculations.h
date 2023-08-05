@@ -25,6 +25,8 @@ int RandNumLarge();
 // Random chance to simulate error in "calculations"
 bool RussianRoulette();
 
-void VerySlowSort(int num);
+void VerySlowSort_in_parallel(int num);
+void StartCalculation_in_parallel();
 
-void StartCalculation();
+//void VerySlowSort(int num);
+//void StartCalculation();

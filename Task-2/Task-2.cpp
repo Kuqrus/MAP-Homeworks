@@ -10,7 +10,7 @@
 
 int main()
 {
-	//StartCalculation();
+	StartCalculation_in_parallel();
 
     //AtomicQueue aq(100);
     //aq.init();
