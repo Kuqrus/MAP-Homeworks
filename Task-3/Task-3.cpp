@@ -9,6 +9,6 @@ int main()
 
 	//InitSorting();
 	 
-	//InitForeach();
+	InitForeach();
 
 }

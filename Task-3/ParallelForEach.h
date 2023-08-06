@@ -2,6 +2,8 @@
 #include <vector>
 #include <iterator>
 #include <thread>
+#include <algorithm>
+#include <future>
 
 #include "Timer.h"
 
